@@ -1,0 +1,70 @@
+WindowManager:
+    Menu:
+
+
+<Menu>:
+    name: 'Menu'
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        spacing: 20
+        padding: 20
+
+        Label:
+            id: tek
+            text: "Текущее время включения в СИЗОД (T вкл.):"
+
+        Label:
+            text: "часов:"
+
+        TextInput:
+            id: hour
+            multiline: False
+
+        Label:
+            text: "минут:"
+
+        TextInput:
+            id: minut
+            multiline: False
+
+        Label:
+            text: "Минимальное значение давления в баллонах дымозащитников при входе в НДС (P вкл.):"
+
+        TextInput:
+            id: min
+            multiline: False
+
+        Button:
+            id: b1_1
+            text: 'Рассчитать'
+            size_hint:(None, None)
+            width: 10
+            height: 50
+            pos_hint: {'center_x': 0.5}
+            size_hint: (1, .1)
+            on_press: root.goal()
+
+        Label:
+            id: goals1
+            text: " "
+
+        Label:
+            id: goals2
+            text: " "
+
+        Label:
+            id: goals3
+            text: " "
+
+        Label:
+            id: goals4
+            text: " "
+
+        Label:
+            id: goals5
+            text: " "
+
+        Label:
+            id: goals6
+            text: " "
